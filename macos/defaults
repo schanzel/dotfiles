@@ -1,0 +1,7 @@
+defaults write com.apple.finder CreateDesktop false
+defaults write com.apple.finder AppleShowAllFiles true
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+defaults write org.macosforge.xquartz.X11 app_to_run /usr/bin/true
+defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
