@@ -20,16 +20,16 @@ set -gx EDITOR nvim
 
 # Prepend some custom directories to the PATH, for GNU cureutils etc.
 set _paths /usr/local/sbin \
-					 /usr/local/opt/coreutils/libexec/gnubin \
-					 /usr/local/opt/python/libexec/bin \
-					 /usr/local/opt/node@10/bin \
-					 /Library/TeX/Distributions/TeXLive-2016.texdist/Contents/Programs/texbin
+           /usr/local/opt/coreutils/libexec/gnubin \
+           /usr/local/opt/python/libexec/bin \
+           /usr/local/opt/node@10/bin \
+           /Library/TeX/Distributions/TeXLive-2016.texdist/Contents/Programs/texbin
 
 for _path in $_paths
-		if contains $_path $PATH
-				set -gx PATH (string match -v $_path $PATH)
-		end
-		set -gxp PATH $_path
+    if contains $_path $PATH
+        set -gx PATH (string match -v $_path $PATH)
+    end
+    set -gxp PATH $_path
 end
 
 # Enable GNU coreutils man pages
@@ -45,15 +45,15 @@ set -gx LESS_TERMCAP_ue (printf "\033[0m")
 set -gx LESS_TERMCAP_us (printf "\033[01;32m")
 
 function fish_user_key_bindings
-	# Vi Mode per Default
-	fish_vi_key_bindings
+    # Vi Mode per Default
+    fish_vi_key_bindings
 
-	# Restore Ctrl+f for Autocompletion
- 	for mode in insert default visual
- 		bind -M $mode \cf forward-char
- 	end
+    # Restore Ctrl+f for Autocompletion
+     for mode in insert default visual
+         bind -M $mode \cf forward-char
+     end
 
-	bind -M insert \cK up-or-search
-	bind -M insert \cJ down-or-search
+    bind -M insert \cK up-or-search
+    bind -M insert \cJ down-or-search
 end
 

@@ -1,31 +1,30 @@
-# This is Git's per-user configuration file.
 [alias]
-	unstage = reset HEAD --
-	co = checkout
-	br = branch
-	ci = commit
+    unstage = reset HEAD --
+    co = checkout
+    br = branch
+    ci = commit
     st = status
     lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-	alias = config --get-regexp '^alias\\.'
+    alias = config --get-regexp '^alias\\.'
 [user]
-	useconfigonly = true
+    useconfigonly = true
 [pager]
-	diff = diff-so-fancy | less --tabs=1,5 -RFX
-	show = diff-so-fancy | less --tabs=1,5 -RFX
+    diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
 [core]
-	excludesfile = /Users/schanzel/.gitignore_global
-	pager = diff-so-fancy | less --tabs=1,5 -RFX
+    excludesfile = /Users/schanzel/.gitignore_global
+    pager = diff-so-fancy | less --tabs=1,5 -RFX
 [color]
-	ui = true
+    ui = true
 [color "diff"]
-	frag = magenta bold
-	commit = 227 bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    frag = magenta bold
+    commit = 227 bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 

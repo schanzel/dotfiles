@@ -60,12 +60,12 @@ autocmd Filetype yaml setlocal ts=2 sw=2 sts=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab
 
 function! GitBr()
-	let branch = gitbranch#name()
-	if branch == ''
-		return ''
-	else
-		return ' ' . branch
-	endif
+    let branch = gitbranch#name()
+    if branch == ''
+        return ''
+    else
+        return ' ' . branch
+    endif
 endfunction
 
 let g:lightline = {
