@@ -8,7 +8,7 @@ Plug 'ericbn/vim-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -66,6 +66,8 @@ let g:deoplete#enable_at_startup = 0
 autocmd InsertEnter * call deoplete#enable()
 
 let g:table_mode_corner='|'
+
+let g:signify_vcs_list=['git']
 
 " 2 spaces as default indent
 set tabstop=4
