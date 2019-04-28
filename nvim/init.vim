@@ -19,12 +19,12 @@ Plug 'vim-pandoc/vim-pandoc-syntax', { 'on_ft': 'markdown' }
 Plug 'dhruvasagar/vim-table-mode', { 'on_ft': 'markdown' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'aserebryakov/vim-todo-lists', { 'on_ft': 'todo' }
+Plug 'lervag/vimtex', { 'on_ft': 'tex' }
 
 call plug#end()
 
 set updatetime=100
 
-" User Config
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>\<Space>"
 nnoremap <leader>st :Startify<cr>
@@ -80,4 +80,8 @@ set smarttab
 autocmd Filetype pandoc setlocal shiftwidth=4
 autocmd Filetype yaml setlocal shiftwidth=4
 autocmd Filetype python setlocal shiftwidth=4
+
+let g:tex_flavor = 'latex'
+
+let g:goyo_width = 100
 
