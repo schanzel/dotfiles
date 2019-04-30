@@ -57,3 +57,7 @@ function fish_user_key_bindings
     bind -M insert \cJ down-or-search
 end
 
+powerline-daemon -q
+set fish_function_path $fish_function_path "/usr/local/lib/python3.7/site-packages/powerline/bindings/fish"
+powerline-setup
+
