@@ -6,14 +6,18 @@
                 "args": {
                     "override": {
                         "default": "N",
-                        "insert": "I",
-                        "visual": "V"
+                        "insert":  "I",
+                        "visual":  "V"
                     }
                 },
 				"priority": 10
 			},
 			{
 				"function": "powerline.segments.shell.cwd",
+                "args": {
+                    "dir_shorten_len": 1,
+                    "dir_limit_depth": 2
+                },
 				"priority": 10
 			}
 		],
