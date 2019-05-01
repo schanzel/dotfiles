@@ -30,17 +30,17 @@ let maplocalleader = "\<Space>\<Space>"
 nnoremap <leader>st :Startify<cr>
 nnoremap <leader>ft :NERDTreeToggle<cr>
 
-let g:clipboard = 
+let g:clipboard =
       \{
-      \  'copy': { 
-      \    '+': 'pbcopy', 
+      \  'copy': {
+      \    '+': 'pbcopy',
       \    '*': 'pbcopy'
       \  },
       \  'paste': {
-      \    '+': 'pbpaste', 
+      \    '+': 'pbpaste',
       \    '*': 'pbpaste'
       \  },
-      \  'name': 'pbcopy', 
+      \  'name': 'pbcopy',
       \  'cache_enabled': 0
       \}
 

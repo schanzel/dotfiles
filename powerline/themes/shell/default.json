@@ -1,31 +1,31 @@
 {
-	"segments": {
-		"left": [
-			{
-				"function": "powerline.segments.shell.mode",
-                "args": {
-                    "override": {
-                        "default": "N",
-                        "insert":  "I",
-                        "visual":  "V"
-                    }
-                },
-				"priority": 10
-			},
-			{
-				"function": "powerline.segments.shell.cwd",
-                "args": {
-                    "dir_shorten_len": 1,
-                    "dir_limit_depth": 2
-                },
-				"priority": 10
-			}
-		],
-		"right": [
-			{
-				"function": "powerline.segments.shell.last_pipe_status",
-				"priority": 10
-			}
-		]
-	}
+  "segments": {
+    "left": [
+      {
+        "function": "powerline.segments.shell.mode",
+        "args": {
+          "override": {
+            "default": "N",
+            "insert":  "I",
+            "visual":  "V"
+          }
+        },
+        "priority": 10
+      },
+      {
+        "function": "powerline.segments.shell.cwd",
+        "args": {
+          "dir_shorten_len": 1,
+          "dir_limit_depth": 2
+        },
+        "priority": 10
+      }
+    ],
+    "right": [
+      {
+        "function": "powerline.segments.shell.last_pipe_status",
+        "priority": 10
+      }
+    ]
+  }
 }
