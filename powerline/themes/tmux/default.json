@@ -2,14 +2,10 @@
   "segments": {
     "right": [
       {
-        "function": "powerline.segments.common.vcs.branch",
-        "args": {
-          "status_colors": true
-        }
+        "function": "powerline_gitstatus.gitstatus"
       },
       {
-        "function": "powerline.segments.common.sys.uptime",
-        "priority": 50
+        "function": "powerline.segments.common.sys.uptime"
       },
       {
         "function": "powerline.segments.common.sys.cpu_load_percent",
