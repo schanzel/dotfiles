@@ -20,6 +20,7 @@ Plug 'dhruvasagar/vim-table-mode', { 'on_ft': 'markdown' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'aserebryakov/vim-todo-lists', { 'on_ft': 'todo' }
 Plug 'lervag/vimtex', { 'on_ft': 'tex' }
+Plug '907th/vim-auto-save'
 
 call plug#end()
 
@@ -58,6 +59,9 @@ set termguicolors
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
+
+let g:auto_save = 1
+let g:auto_save_silent = 1
 
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
