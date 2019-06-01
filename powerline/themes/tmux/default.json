@@ -5,9 +5,6 @@
         "function": "powerline_gitstatus.gitstatus"
       },
       {
-        "function": "powerline.segments.common.sys.uptime"
-      },
-      {
         "function": "powerlinemem.mem_usage.mem_usage",
         "args": {
           "format": "Mem: %s/%s"

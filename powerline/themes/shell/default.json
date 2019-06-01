@@ -5,9 +5,10 @@
         "function": "powerline.segments.shell.mode",
         "args": {
           "override": {
-            "default": "N",
-            "insert":  "I",
-            "visual":  "V"
+            "default":      "N",
+            "insert":       "I",
+            "visual":       "V",
+            "replace_one":  "R"
           }
         },
         "priority": 10
