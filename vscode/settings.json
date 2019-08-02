@@ -1,0 +1,63 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Hack Nerd Font'",
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "files.enableTrash": false,
+    "files.insertFinalNewline": true,
+    "vim.sneak": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        }
+    ],
+    // a temporary solution for VSCode not finding venvs under .tox
+    "python.venvPath": "${workspaceFolder}/.tox",
+    // defaults for Python projects (can override per project)
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.autoComplete.addBrackets": true,
+    "python.terminal.activateEnvironment": false,
+    "python.formatting.provider": "black",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "-vv"
+    ],
+    "editor.formatOnSave": true,
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Dark Mode"
+}
