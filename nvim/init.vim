@@ -4,23 +4,24 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug '907th/vim-auto-save'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'aserebryakov/vim-todo-lists', { 'on_ft': 'todo' }
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'dhruvasagar/vim-table-mode', { 'on_ft': 'markdown' }
 Plug 'ericbn/vim-solarized'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
+Plug 'junegunn/limelight.vim'
+Plug 'justinmk/vim-sneak'
+Plug 'lervag/vimtex', { 'on_ft': 'tex' }
 Plug 'mhinz/vim-signify'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-Plug 'junegunn/limelight.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-pandoc/vim-pandoc', { 'on_ft': 'markdown' }
 Plug 'vim-pandoc/vim-pandoc-syntax', { 'on_ft': 'markdown' }
-Plug 'dhruvasagar/vim-table-mode', { 'on_ft': 'markdown' }
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'aserebryakov/vim-todo-lists', { 'on_ft': 'todo' }
-Plug 'lervag/vimtex', { 'on_ft': 'tex' }
-Plug '907th/vim-auto-save'
 
 call plug#end()
 
@@ -47,6 +48,7 @@ let g:clipboard =
 
 set clipboard+=unnamedplus
 set number
+set relativenumber
 set noshowmode
 
 syntax enable
