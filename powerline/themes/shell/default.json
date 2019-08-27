@@ -2,24 +2,16 @@
   "segments": {
     "left": [
       {
-        "function": "powerline.segments.shell.mode",
-        "args": {
-          "override": {
-            "default":      "N",
-            "insert":       "I",
-            "visual":       "V",
-            "replace_one":  "R"
-          }
-        },
-        "priority": 10
-      },
-      {
         "function": "powerline.segments.shell.cwd",
         "args": {
           "dir_shorten_len": 1,
           "dir_limit_depth": 2
         },
         "priority": 10
+      },
+      {
+        "function": "powerline_gitstatus.gitstatus",
+        "priority": 40
       }
     ],
     "right": [

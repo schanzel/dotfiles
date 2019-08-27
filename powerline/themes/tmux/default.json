@@ -2,9 +2,6 @@
   "segments": {
     "right": [
       {
-        "function": "powerline_gitstatus.gitstatus"
-      },
-      {
         "function": "powerlinemem.mem_usage.mem_usage",
         "args": {
           "format": "Mem: %s/%s"
