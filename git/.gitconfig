@@ -8,23 +8,8 @@
     alias = config --get-regexp '^alias\\.'
 [user]
     useconfigonly = true
-[pager]
-    diff = diff-so-fancy | less --tabs=1,5 -RFX
-    show = diff-so-fancy | less --tabs=1,5 -RFX
-[color "diff-highlight"]
-    oldNormal = red bold
-    oldHighlight = red bold 52
-    newNormal = green bold
-    newHighlight = green bold 22
 [core]
     excludesfile = /Users/schanzel/.gitignore_global
-    pager = diff-so-fancy | less --tabs=1,5 -RFX
-[color]
-    ui = true
-[color "diff"]
-    frag = magenta bold
-    commit = 227 bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
-
+    pager = diff-so-fancy | less -RF
+[include]
+    path = ~/.config/git-user
