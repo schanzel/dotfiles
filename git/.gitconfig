@@ -9,7 +9,7 @@
 [user]
     useconfigonly = true
 [core]
-    excludesfile = /Users/schanzel/.gitignore_global
+    excludesfile = ~/.gitignore_global
     pager = diff-so-fancy | less -RF
 [include]
     path = ~/.config/git-user
