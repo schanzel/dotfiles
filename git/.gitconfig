@@ -13,3 +13,5 @@
     pager = diff-so-fancy | less -RF
 [include]
     path = ~/.config/git-user
+[remote "origin"]
+	prune = true
