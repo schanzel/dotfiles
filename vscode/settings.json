@@ -21,6 +21,11 @@
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
     "python.venvPath": "${workspaceFolder}/.tox",
+    "remote.containers.defaultExtensions": [
+        "ms-python.python",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github"
+    ],
     "vim.hlsearch": true,
     "vim.normalModeKeyBindings": [
         {
@@ -58,7 +63,13 @@
     ],
     "vim.sneak": true,
     "vim.useSystemClipboard": true,
+    "vim.statusBarColorControl": true,
     "workbench.colorTheme": "Dark Mode",
     "workbench.editor.enablePreview": false,
-    "workbench.editor.showTabs": true
+    "workbench.editor.showTabs": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
 }
