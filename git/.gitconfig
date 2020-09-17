@@ -1,17 +1,23 @@
 [alias]
-    unstage = reset HEAD --
-    co = checkout
-    br = branch
-    ci = commit
-    st = status
-    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     alias = config --get-regexp '^alias\\.'
-[user]
-    useconfigonly = true
+    br = branch
+    cb = branch --show-current
+    cc = rev-parse --short HEAD
+    ci = commit
+    co = checkout
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+    st = status
+    unstage = reset HEAD --
 [core]
     excludesfile = ~/.gitignore_global
-    pager = diff-so-fancy | less -RF
+    pager = delta --dark --keep-plus-minus-markers
 [include]
     path = ~/.config/git-user
+[interactive]
+    diffFilter = delta --color-only
 [remote "origin"]
 	prune = true
+[user]
+    useconfigonly = true
+[pull]
+	rebase = false
