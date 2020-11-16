@@ -1,78 +1,77 @@
 {
-    "editor.fontFamily": "'Hack Nerd Font'",
-    "editor.fontSize": 15,
-    "editor.formatOnSaveMode": "modifications",
-    "editor.minimap.enabled": false,
-    "editor.renderFinalNewline": false,
-    "explorer.openEditors.visible": 0,
-    "files.autoSave": "afterDelay",
-    "files.enableTrash": false,
-    "files.insertFinalNewline": true,
-    "python.autoComplete.addBrackets": true,
-    "python.formatting.provider": "black",
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestArgs": [
-        "-vv"
-    ],
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "python.venvPath": "${workspaceFolder}/.tox",
-    "remote.containers.defaultExtensions": [
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "eamodio.gitlens",
-        "github.vscode-pull-request-github"
-    ],
-    "vim.hlsearch": true,
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "<C-h>"
-            ],
-            "commands": [
-                "workbench.action.focusLeftGroup"
-            ]
-        },
-        {
-            "before": [
-                "<C-j>"
-            ],
-            "commands": [
-                "workbench.action.focusBelowGroup"
-            ]
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "commands": [
-                "workbench.action.focusAboveGroup"
-            ]
-        },
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "commands": [
-                "workbench.action.focusRightGroup"
-            ]
-        }
-    ],
-    "vim.sneak": true,
-    "vim.useSystemClipboard": true,
-    "vim.statusBarColorControl": true,
-    "workbench.colorTheme": "Dark Mode",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.showTabs": true,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+  "editor.fontFamily": "'Hack Nerd Font'",
+  "editor.fontSize": 15,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.minimap.enabled": false,
+  "editor.renderFinalNewline": false,
+  "explorer.openEditors.visible": 0,
+  "files.autoSave": "afterDelay",
+  "files.enableTrash": false,
+  "files.insertFinalNewline": true,
+  "go.useLanguageServer": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.autoComplete.addBrackets": true,
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.terminal.activateEnvironment": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestArgs": [
+    "-vv"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.venvPath": "${workspaceFolder}/.tox",
+  "remote.containers.defaultExtensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "eamodio.gitlens"
+  ],
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
     },
-    "python.languageServer": "Pylance",
-    "python.analysis.completeFunctionParens": true,
-    "go.useLanguageServer": true,
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    }
+  ],
+  "vim.sneak": true,
+  "vim.statusBarColorControl": true,
+  "vim.useSystemClipboard": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f"
+  },
+  "workbench.colorTheme": "Dark Mode",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": true
 }
